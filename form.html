@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIAR</title>
+    <link rel="stylesheet" href="stylecss/style.css">
+    <link rel="stylesheet" href="stylecss/FOstyle.css">
+</head>
+<body>
+    <section>
+        <header>
+            
+            <a><img id="eee" src="img/12.png" width="200" height="70" class="logo"></a>
+            <p id="EE"> <MARQUEE WIDTH=50% HEIGHT=60>Cineticket</p></MARQUEE>
+            <a><img id="eee" src="img/12.png" width="200" height="70" class="logo"></a>
+            <ul>
+               
+                <li><a href="form.html">Menu</a></li>
+                <li><a href="https://www.instagram.com/"><img src="img/insta.png" height="25" width="25"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="img/fac.png" height="25" width="25"></a></li>
+            </ul>
+        </header>
+        <div class="conte">
+            <form id="form" name="form" method="POST" action="">
+                <table width="560" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                    <td width="504"><table width="560" border="0" align="left" cellpadding="0" cellspacing="0">
+                    <tr>
+                    <td width="270" align="left" valign="top">
+                    <label>*Nombre:<br />
+                    <input name="nombre" type="text" class="campo" id="nombre" />
+                    </label>
+                    </td>
+                    <td width="20" align="left" valign="top">&nbsp;</td>
+                    <td width="270" align="left" valign="top">
+                    <label>*Apellidos:<br />
+                    <input name="apellidos" type="text" class="campo" id="apellidos" />
+                    </label>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width="270" align="left" valign="top">
+                    
+                    </td>
+                    <td width="20" align="left" valign="top">&nbsp;</td>
+                    <td width="270" align="left" valign="top">
+                    
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width="270" align="left" valign="top">
+                    <label for="municipio">*Pais:</label>
+                    <select name="municipio" class="campo" id="municipio">
+                    <option value="0" selected="selected">Seleccione ...</option>
+                    <option value="Tlalixtac">Mexico</option>
+                    <option value="Huayapam">E.U.A</option>
+                    <option value="Oaxaca">RESTO DEL MUNDO</option>
+                    
+                    </select>
+                    </td>
+                    <td width="20" align="left" valign="top">&nbsp;</td>
+                    <td width="270" align="left" valign="top">
+                    
+                    </td>
+                    </tr>
+                    <tr>
+                    <td width="270" align="left" valign="top">
+                    <label>*Tel&eacute;fono:<br />
+                    <input name="telefono" type="text" class="campo" id="telefono" />
+                    </label>
+                    </td>
+                    <td width="20" align="left" valign="top">&nbsp;</td>
+                    <td width="270" align="left" valign="top">
+                    <label>*Email:<br />
+                    <input name="email" type="text" class="campo" id="email" />
+                    </label>
+                    </td>
+                    </tr>
+                    </table></td>
+                    </tr>
+                    <tr>
+                    <td width="504"><table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                    <tr>
+                    <td align="left" valign="top">
+                    <input name="condiciones" type="checkbox" id="condiciones" />
+                    He le&iacute;do y acepto las Condiciones Generales
+                    </td>
+                    <td width="20" align="left" valign="top">&nbsp;</td>
+                    <td align="right" valign="top"><input name="Bot&oacute;n" type="button" onclick="valida_envia()" class="bt" id="Enviar" value="Enviar" / />
+                    <br /></td>
+                    </tr>
+                    </table></td>
+                    </tr>
+                    </table>
+                    <input type="hidden" name="MM_insert" value="form1" />
+            </form>
+           
+            <div class="textBox">
+                <br><center><a href="index.html">VOLVER</a><br></center>
+                
+            </div>
+            <div class="imgBox">
+                
+                <img src="img/sidex.jpg" width="250px" height="400px" class="dex">
+
+        </div>
+        </div>
+        <ul class="tum"><p id="let">SERIES</p>
+            <li><img src="img/sidex.jpg" onclick="imgSlider('img/sidex.jpg')" width="200" height="140"  </li>
+            <li><img src="img/bobesponja.png"width="250" height="140" onclick="imgSlider('img/bobesponja.png')"> </li>
+            <li><img src="img/simpson.jpg"width="200" height="140" onclick="imgSlider('img/simpson.jpg')"> </li>
+        </ul>
+        <ul class="si">
+            <li><a href="#"><img src="img/pix.jpg" height="80" width="80"></a></li>
+            <li><a href="#"><img src="img/yu.png" height="80" width="80"></a></li>
+            <li><a href="#"><img src="img/fox.png" height="80" width="80"></a></li>
+        </ul>
+
+    </section>
+    <footer>
+
+    </footer>
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.dex').src=anything;
+    }
+    </script>
+    <script src="form.js"></script>
+    
+</body>
+</html>
